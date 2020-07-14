@@ -3,7 +3,7 @@ import StyledPlaylistHeader from './styles/StyledPlaylistHeader'
 import StyledJourney from './styles/StyledJourney'
 
 
-const PlaylistHeader = ({ active, total }) => (
+const VideoDangPhat = ({ active, total }) => (
     <StyledPlaylistHeader>
         <p>{active.title}</p>
         <StyledJourney>
@@ -12,4 +12,4 @@ const PlaylistHeader = ({ active, total }) => (
     </StyledPlaylistHeader>
 )
 
-export default PlaylistHeader; 
+export default VideoDangPhat; 

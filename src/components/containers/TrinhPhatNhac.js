@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components'
 import Video from '../Video'
-import Playlist from '../containers/Playlist'
 import StyledWbnPlayer from '../styles/StyledWbnPlayer'
+import DanhSach from '../containers/DanhSach';
 
 const theme = {
     bgcolor: "#353535",
@@ -24,7 +24,7 @@ const themeLight = {
     color: '#353535'
 }
 
-const WbnPlayer = props => {
+const TrinhPhatNhac = props => {
     const videos = JSON.parse(document.querySelector('[name="videos"]').value);
     const savedState = JSON.parse(localStorage.getItem(`${videos.playlistId}`));
 
@@ -104,7 +104,7 @@ const WbnPlayer = props => {
                         endCallback={endCallback}
                         progressCallback={progressCallback}
                     />
-                    <Playlist
+                    <DanhSach
                         videos={state.videos}
                         active={state.activeVideo}
                         nightModeCallback={nightModeCallback}
@@ -115,4 +115,4 @@ const WbnPlayer = props => {
     );
 }
 
-export default WbnPlayer;
+export default TrinhPhatNhac;

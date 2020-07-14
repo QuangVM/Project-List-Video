@@ -1,5 +1,5 @@
 import React from 'react';
-import WbnPlayer from './WbnPlayer'
+import WbnPlayer from './TrinhPhatNhac'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import GlobalStyle from '../styles/GlobalStyle'
 
